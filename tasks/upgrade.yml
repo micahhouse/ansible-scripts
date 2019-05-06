@@ -3,9 +3,10 @@
     url: https://dl.google.com/linux/linux_signing_key.pub
 
 - name: Add Google Chrome Repository
-  apt_repository:
-    repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
-
+  copy:
+    src: files/dl_google_com_linux_chrome_deb.list
+    dest: /etc/apt/sources.list.d/
+    
 - name: Update package lists
   apt:
     update_cache: yes
