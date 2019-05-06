@@ -8,7 +8,7 @@
     
 - name: Add Wallpaper Repository
   apt_repository:
-    repo: ppa:eloy-garcia-pca/wallpaperdownloader
+    repo: ppa:whizzzkid/bingwallpaper
 
 - name: Update package lists
   apt:
@@ -21,8 +21,8 @@
 - name: Install Packages
   apt:
     name:
+      - bingwallpaper
       - google-chrome-stable
-      - wallpaperdownloader
       - xscreensaver
       - xscreensaver-*
       - xubuntu-restricted-extras
