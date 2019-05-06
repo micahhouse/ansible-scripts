@@ -34,5 +34,10 @@
     path: /home/micah/Pictures/.wp.jpg
     mode: 0755
 
+- name: Chmod Wallpaper Script
+  file:
+    path: files/wallpaper.sh
+    mode: 0755
+
 - name: Set Wallpaper
   shell: files/wallpaper.sh
