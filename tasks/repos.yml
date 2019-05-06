@@ -1,11 +1,3 @@
-- name: Add Universe Repo
-  apt_repository: 
-    repo: "{{ item }}" 
-  with_items:
-  - "deb http://archive.ubuntu.com/ubuntu/ bionic universe"
-  - "deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe"
-  - "deb http://security.ubuntu.com/ubuntu/ bionic-security universe"
-
 - name: Add Google Chrome Signing Key
   apt_key:
     url: https://dl.google.com/linux/linux_signing_key.pub
