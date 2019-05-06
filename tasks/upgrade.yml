@@ -1,12 +1,3 @@
-- name: Add Google Chrome Signing Key
-  apt_key:
-    url: https://dl.google.com/linux/linux_signing_key.pub
-    
-- name: Add Google Chrome Repository
-  apt_repository:
-    repo: deb http://dl.google.com/linux/chrome/deb/ stable main
-    filename: google-chrome
-    
 - name: Update package lists
   apt:
     update_cache: yes
@@ -14,11 +5,3 @@
 - name: Upgrade System
   apt:
     upgrade: dist
-    
-- name: Install Packages
-  apt:
-    name:
-      - google-chrome-stable
-      - xscreensaver
-      - xscreensaver-screensaver-*
-      - xubuntu-restricted-extras
