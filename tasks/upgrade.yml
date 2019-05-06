@@ -16,6 +16,4 @@
     upgrade: dist
     
 - name:
-  apt:
-    name:
-    - google-chrome-stable
+  apt: "name=google-chrome-stable"
