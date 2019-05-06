@@ -1,5 +1,11 @@
 - name: Upgrade System
   include_tasks: tasks/upgrade.yml
+  
+- name: Enable Guest Account
+  lineinfile:
+    path: /usr/share/lightdm/lightdm.conf.d/50-disable-guest.conf
+    regexp: 'allow-guest=false'
+    line: 'allow-guest=true'
 
 - name: Create ansible user
   user:
