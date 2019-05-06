@@ -1,3 +1,0 @@
-roles:
-    - role: gantsign.default-web-browser
-      default_web_browser: google-chrome
