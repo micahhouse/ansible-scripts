@@ -40,4 +40,4 @@
     mode: 0755
 
 - name: Set Wallpaper
-  shell: files/wallpaper.sh
+  shell: files/wallpaper.sh >> /home/micah/test
