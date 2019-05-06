@@ -13,6 +13,13 @@
     minute: "*/10"
     job: "/usr/bin/ansible-pull -o -U https://github.com/micahhouse/ansible-scripts.git > /dev/null"
 
+- name: Create wallpaper cronjob
+  cron:
+    user: ansible
+    name: "wallpaper update"
+    hour: "*/6"
+    job: "/opt/wallpapers/bingwallpaper -1 > /dev/null 2>&1"
+
 - name: Copy ansible sudoers file
   copy:
     src: files/ansible_sudoers
