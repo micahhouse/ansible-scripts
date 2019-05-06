@@ -5,6 +5,10 @@
 - name: Add Google Chrome Repository
   apt_repository:
     repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+    
+- name: Add Wallpaper Repository
+  apt_repository:
+    repo: ppa:eloy-garcia-pca/wallpaperdownloader
 
 - name: Update package lists
   apt:
@@ -18,6 +22,7 @@
   apt:
     name:
       - google-chrome-stable
+      - wallpaperdownloader
       - xscreensaver
       - xscreensaver-*
       - xubuntu-restricted-extras
