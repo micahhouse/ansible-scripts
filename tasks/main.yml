@@ -1,11 +1,5 @@
-- name: Update package lists
-  apt:
-    update_cache: yes
-    cache_valid_time: 3600
-
 - name: Upgrade System
-  apt:
-    upgrade: dist
+  include_tasks: tasks/upgrade.yml
 
 - name: Create ansible user
   user:
@@ -17,9 +11,12 @@
     user: ansible
     name: "ansible provisioning"
     minute: "*/10"
-    job: "/usr/bin/ansible-pull -o -U https://github.com/foundationkitty/afterschool-ansible.git > /dev/null"
+    job: "/usr/bin/ansible-pull -o -U https://github.com/micahhouse/ansible-scripts.git > /dev/null"
 
 - name: Copy ansible sudoers file
   copy:
     src: files/ansible_sudoers
     dest: /etc/sudoers.d/ansible
+    
+- name: Install repositories and packages
+  include_tasks: tasks/packages.yml
