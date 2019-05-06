@@ -5,10 +5,6 @@
 - name: Add Google Chrome Repository
   apt_repository:
     repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
-    
-- name: Add Wallpaper Repository
-  apt_repository:
-    repo: ppa:whizzzkid/bingwallpaper
 
 - name: Update package lists
   apt:
@@ -21,7 +17,6 @@
 - name: Install Packages
   apt:
     name:
-      - bingwallpaper
       - google-chrome-stable
       - xscreensaver
       - xscreensaver-*
