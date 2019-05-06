@@ -23,7 +23,6 @@
 - name: Install Packages
   apt:
     name:
-      - bingwallpaper
       - google-chrome-stable
       - xscreensaver
       - xscreensaver-*
