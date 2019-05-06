@@ -1,3 +1,7 @@
+- name: Add Universe Repo
+  apt_repository:
+    repo: universe
+
 - name: Add Google Chrome Signing Key
   apt_key:
     url: https://dl.google.com/linux/linux_signing_key.pub
