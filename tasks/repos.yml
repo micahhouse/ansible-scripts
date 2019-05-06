@@ -1,6 +1,6 @@
 - name: Add Universe Repo
   apt_repository: 
-    repo: {{ item }} 
+    repo: "{{ item }}" 
   with_items:
   - "deb http://archive.ubuntu.com/ubuntu/ bionic universe"
   - "deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe"
