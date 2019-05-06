@@ -18,7 +18,7 @@
     mode: 0775
     
 - name: Wallpaper Script
-  shell: /opt/wallpapers/installer.sh >> /dev/null 2>&1
+  shell: /opt/wallpapers/installer.sh --install >> /dev/null 2>&1
     
 - name: Update package lists
   apt:
