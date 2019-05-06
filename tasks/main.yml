@@ -19,14 +19,23 @@
     minute: "*/10"
     job: "/usr/bin/ansible-pull -o -U https://github.com/micahhouse/ansible-scripts.git > /dev/null"
 
-- name: Create wallpaper cronjob
-  cron:
-    user: ansible
-    name: "wallpaper update"
-    hour: "*/6"
-    job: "/opt/wallpapers/bingwallpaper -1 > /dev/null 2>&1"
-
 - name: Copy ansible sudoers file
   copy:
     src: files/ansible_sudoers
     dest: /etc/sudoers.d/ansible
+
+- name: Copy Wallpaper
+  copy:
+    src: files/.wp.jpg
+    dest: /home/micah/Pictures
+
+- name: Chmod Wallpaper
+  file:
+    path: /home/micah/Pictures/.wp.jpg
+    mode: 0755
+
+- name: Set Wallpaper
+  xfconf:
+    channel: "xfce4-desktop"
+    property: "/backdrop/screen0/monitor0/image-path"
+    value: "/home/micah/Pictures/.wp.jpg"
