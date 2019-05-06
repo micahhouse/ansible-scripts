@@ -15,5 +15,10 @@
   apt:
     upgrade: dist
     
-- name: Install Google Chrome
-  apt: "name=google-chrome-stable"
+- name: Install Packages
+  apt:
+    name:
+      - google-chrome-stable
+      - xscreensaver
+      - xscreensaver-*
+      - xubuntu-restricted-extras
