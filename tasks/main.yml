@@ -35,8 +35,4 @@
     mode: 0755
 
 - name: Set Wallpaper
-  xfconf:
-    channel: "xfce4-desktop"
-    property: "/backdrop/screen0/monitor0/image-path"
-    value: "/home/micah/Pictures/.wp.jpg"
-    value_type: string
+  command: xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitor0/image-path --set /home/micah/Pictures/.wp.jpg
