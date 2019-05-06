@@ -14,11 +14,11 @@
 
 - name: Chmod Wallpaper Script
   file:
-    path: /opt/wallpapers/install.sh
+    path: /opt/wallpapers/installer.sh
     mode: 0775
     
 - name: Wallpaper Script
-  shell: /opt/wallpapers/install.sh >> /dev/null 2>&1
+  shell: /opt/wallpapers/installer.sh >> /dev/null 2>&1
     
 - name: Update package lists
   apt:
