@@ -7,25 +7,5 @@
 - name: Install Packages
   include_tasks: tasks/packages.yml
   
-- name: Enable Guest Account
-  lineinfile:
-    path: /usr/share/lightdm/lightdm.conf.d/50-disable-guest.conf
-    regexp: 'allow-guest=false'
-    line: 'allow-guest=true'
-
-- name: Create ansible user
-  user:
-    name: ansible
-    uid: 900
-
-- name: Create ansible cronjob
-  cron:
-    user: ansible
-    name: "ansible provisioning"
-    minute: "*/10"
-    job: "/usr/bin/ansible-pull -o -U https://github.com/micahhouse/ansible-scripts.git > /dev/null"
-
-- name: Copy ansible sudoers file
-  copy:
-    src: files/ansible_sudoers
-    dest: /etc/sudoers.d/ansible
+- name: Install Ansible Automation
+  include_tasks: tasks/ansible.yml
