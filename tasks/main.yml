@@ -1,5 +1,11 @@
+- name: Add Repos
+  include_tasks: tasks/repos.yml
+
 - name: Upgrade System
   include_tasks: tasks/upgrade.yml
+  
+- name: Install Packages
+  include_tasks: tasks/packages.yml
   
 - name: Enable Guest Account
   lineinfile:
@@ -23,21 +29,3 @@
   copy:
     src: files/ansible_sudoers
     dest: /etc/sudoers.d/ansible
-
-- name: Copy Wallpaper
-  copy:
-    src: files/.wp.jpg
-    dest: /home/micah/Pictures
-
-- name: Chmod Wallpaper
-  file:
-    path: /home/micah/Pictures/.wp.jpg
-    mode: 0755
-
-- name: Chmod Wallpaper Script
-  file:
-    path: files/wallpaper.sh
-    mode: 0755
-
-- name: Set Wallpaper
-  shell: files/wallpaper.sh >> /home/micah/test
