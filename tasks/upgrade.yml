@@ -18,10 +18,7 @@
 - name: Install Packages
   apt:
     name:
-      - ansible
-      - curl
       - git
-      - lightdm
       - google-chrome-stable
       - xscreensaver
       - xscreensaver-screensaver-*
