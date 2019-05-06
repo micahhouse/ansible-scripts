@@ -1,0 +1,7 @@
+- name: Install Packages
+  apt:
+    name:
+      - google-chrome-stable
+      - xscreensaver
+      - xscreensaver-screensaver-*
+      - xubuntu-restricted-extras
