@@ -2,6 +2,7 @@
   apt:
     name:
       - google-chrome-stable
+      - sucrose
       - xscreensaver
       - xscreensaver-screensaver-*
       - xubuntu-restricted-extras
