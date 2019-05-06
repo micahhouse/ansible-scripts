@@ -1,0 +1,5 @@
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Load main YML
+    include_tasks: tasks/main.yml
