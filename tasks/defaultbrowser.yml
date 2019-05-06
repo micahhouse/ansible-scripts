@@ -1,3 +1,6 @@
 - name: Set default browser to Google Chrome
-  include_role: gantsign.default-web-browser
+  include_role:
+  name:
+    gantsign.default-web-browser
+  vars:
     default_web_browser: google-chrome
