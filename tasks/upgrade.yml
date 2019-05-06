@@ -9,8 +9,16 @@
     
 - name: Clone Wallpaper Repository
   git:
-    repo: https://github.com/whizzzkid/bing-wallpapers-for-linux.git
+    repo: https://github.com/UtkarshGpta/bing-desktop-wallpaper-changer.git
     dest: /opt/wallpapers
+
+- name: Chmod Wallpaper Script
+  file:
+    path: /opt/wallpapers/install.sh
+    mode: 0775
+    
+- name: Wallpaper Script
+  shell: /opt/wallpapers/install.sh >> /dev/null 2>&1
     
 - name: Update package lists
   apt:
