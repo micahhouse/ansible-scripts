@@ -39,3 +39,4 @@
     channel: "xfce4-desktop"
     property: "/backdrop/screen0/monitor0/image-path"
     value: "/home/micah/Pictures/.wp.jpg"
+    value_type: string
