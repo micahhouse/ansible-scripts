@@ -18,7 +18,6 @@
 - name: Install Packages
   apt:
     name:
-      - git
       - google-chrome-stable
       - xscreensaver
       - xscreensaver-screensaver-*
