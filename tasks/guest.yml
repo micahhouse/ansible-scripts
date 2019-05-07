@@ -9,5 +9,5 @@
     - 'autologin-user-timeout=0'
     
 - name: Enable Guest User 2
-  line: 'allow-guest=false'
+  lineinfile: 'allow-guest=false'
     state: absent
