@@ -1,6 +1,3 @@
-# Policies that are enforced and cannot be changed by the user
-# See https://www.chromium.org/administrators/policy-list-3 for a list of policies that can be used
-
 {
   "DefaultCookiesSetting": 4
   "DefaultImagesSetting": 1
