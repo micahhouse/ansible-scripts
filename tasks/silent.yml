@@ -20,4 +20,9 @@
     dest: /etc/default/grub
     backrefs: yes
     regexp: '^GRUB_CMDLINE_LINUX_DEFAULT='
-    line: 'GRUB_CMDLINE_LINUX_DEFAULT="splash quiet loglevel=1 vga=current rd.systemd.show_status=auto rd.udev.log.priority=1 vt.global_cursor_default=0'
+    line: 'GRUB_CMDLINE_LINUX_DEFAULT="splash quiet loglevel=1 vga=current rd.systemd.show_status=auto rd.udev.log.priority=1 vt.global_cursor_default=0"'
+  register: grub
+
+- name: Rebuild grub
+  shell: update-grub
+  when: grub.changed
