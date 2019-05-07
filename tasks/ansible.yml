@@ -22,3 +22,11 @@
     minute: "30"
     hour: "21"
     job: "/sbin/shutdown -h 0 > /dev/null"
+
+- name: Create 9:00pm update cronjob
+  cron:
+    user: ansible
+    name: "nightly reboot"
+    minute: "0"
+    hour: "21"
+    job: "/usr/bin/ansible-pull -o -U https://github.com/micahhouse/ansible-scripts.git files/nightly.yml > /dev/null"
