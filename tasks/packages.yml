@@ -3,6 +3,7 @@
     name:
       - arc-theme
       - google-chrome-stable
+      - inotify-tools
       - ufw
       - xscreensaver
       - xscreensaver-screensaver-*
