@@ -1,0 +1,23 @@
+- name: Blacklist initramfs module
+  lineinfile:
+    path: /etc/modprobe.d/blacklist.conf
+    line: blacklist piix4_smbus
+  register: smbus
+
+- name: Add framebuffer
+  lineinfile: 
+    path: /etc/initramfs-tools/conf.d/resume
+    line: FRAMEBUFFER=y
+  register: framebuffer
+    
+- name: rebuild initramfs if neccessary
+  shell: update-initramfs -u
+  when: smbus.changed or framebuffer.changed
+  
+- name: Add kernel parameters 
+  lineinfile:
+    state: present
+    dest: /etc/default/grub
+    backrefs: yes
+    regexp: '^(GRUB_CMDLINE_LINUX=(?!.*loglevel)\"[^\"]+)(\".*)'
+    line: '\1 loglevel=1 vga=current rd.systemd.show_status=auto rd.udev.log.priority=1 vt.global_cursor_default=0\2'
