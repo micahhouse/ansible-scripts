@@ -9,6 +9,3 @@
   
 - name: Install Ansible Automation
   include_tasks: tasks/ansible.yml
-  
-- name: Set Default Browser
-  include_tasks: tasks/defaultbrowser.yml
