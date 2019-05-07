@@ -1,6 +1,6 @@
 - name: Create Managed Policy Folder
   file:
-    path: /etc/opt/chrome/managed
+    path: /etc/opt/chrome/policies/managed
     state: directory
     owner: root
     group: root
@@ -9,7 +9,7 @@
  
 - name: Create Reccomended Policy Folder
   file:
-    path: /etc/opt/chrome/reccomended
+    path: /etc/opt/chrome/policies/reccomended
     state: directory
     owner: root
     group: root
@@ -19,7 +19,7 @@
 - name: Copy Managed Policy
   copy:
     src: files/managed_policies.json
-    dest: /etc/opt/chrome/managed
+    dest: /etc/opt/chrome/policies/managed
     owner: root
     group: root
     mode: 0700
@@ -27,7 +27,7 @@
 - name: Copy Reccomended Policy
   copy:
     src: files/reccomended_policies.json
-    dest: /etc/opt/chrome/reccomended
+    dest: /etc/opt/chrome/policies/reccomended
     owner: root
     group: root
     mode: 0700
