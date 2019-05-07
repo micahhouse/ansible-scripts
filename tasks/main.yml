@@ -15,3 +15,9 @@
 
 - name: Import Chrome Policies
   include_tasks: tasks/chrome.yml
+ 
+- name: Enable UFW
+  include_tasks: tasks/ufw.yml
+
+- name: Extract skel
+  include_tasks: tasks/skel.yml
