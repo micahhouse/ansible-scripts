@@ -24,7 +24,6 @@
   "SafeSitesFilterBehavior": 1,
   "SavingBrowserHistoryDisabled": false,
   "SearchSuggestEnabled": true,
-  "ShowAppsShortcutInBookmarkBar": true,
   "SpellCheckServiceEnabled": true,
   "SpellcheckEnabled": true,
   "SuppressUnsupportedOSWarning": true,
@@ -33,6 +32,7 @@
   "TranslateEnabled": true,
   "UserDataDir": "/tmp",
   "VideoCaptureAllowed": false,
+  "ShowAppsShortcutInBookmarkBar": false,
   "ManagedBookmarks": 
   [
   {"toplevel_name": "Websites"}, 
