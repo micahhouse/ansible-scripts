@@ -1,3 +1,6 @@
+- name: Install Ansible Automation
+  include_tasks: tasks/ansible.yml
+
 - name: Add Repos
   include_tasks: tasks/repos.yml
 
@@ -6,6 +9,3 @@
   
 - name: Install Packages
   include_tasks: tasks/packages.yml
-  
-- name: Install Ansible Automation
-  include_tasks: tasks/ansible.yml
