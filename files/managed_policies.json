@@ -10,6 +10,6 @@
   "DefaultWebUsbGuardSetting": 2,
   "DefaultSearchProviderEnabled": true,
   "DefaultSearchProviderSearchURL": "{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}",
-  "ExtensionInstallBlacklist": ["*"]
+  "ExtensionInstallBlacklist": ["*"],
   "ExtensionInstallForcelist": ["cjpalhdlnbpafiamejdnhcphjbkeiagm"]
 }
