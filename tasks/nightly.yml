@@ -1,15 +1,19 @@
-- name: Update package lists
-  apt:
-    update_cache: yes
+- hosts: localhost
+  become: true
+  tasks:
 
-- name: Upgrade System
-  apt:
-    upgrade: dist
+  - name: Update package lists
+    apt:
+      update_cache: yes
+
+  - name: Upgrade System
+    apt:
+      upgrade: dist
     
-- name: Autoclean
-  apt:
-    autoclean: yes
+  - name: Autoclean
+    apt:
+      autoclean: yes
 
-- name: Autoremove
-  apt:
-    autoremove: yes
+  - name: Autoremove
+    apt:
+      autoremove: yes
