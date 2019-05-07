@@ -9,5 +9,7 @@
     - 'autologin-user-timeout=0'
     
 - name: Enable Guest User 2
-  lineinfile: 'allow-guest=false'
+  lineinfile: 
+    path: /usr/share/lightdm/lightdm.conf.d/50-disable-guest.conf
+    line: 'allow-guest=false'
     state: absent
