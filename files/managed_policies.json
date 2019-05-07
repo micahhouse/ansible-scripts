@@ -32,7 +32,7 @@
   "TaskManagerEndProcessEnabled": false,
   "TranslateEnabled": true,
   "UserDataDir": "/tmp",
-  "VideoCaptureAllowed": false
+  "VideoCaptureAllowed": false,
   "ManagedBookmarks": [
   {
     "toplevel_name": "Websites"
@@ -46,11 +46,11 @@
     "url": "tenmarks.com"
   },
   { 
-    "name": "LexiaCore5"
+    "name": "LexiaCore5",
     "url": "lexiacore5.com"
   },
   { 
-    "name": "Google Classroom"
+    "name": "Google Classroom",
     "url": "classroom.google.com"
   },
   { "children": 
@@ -72,7 +72,7 @@
         "url": "mathplayground.com",
       },
       {
-        "name" "Greg Tang Math"
+        "name" "Greg Tang Math",
         "url": "gregtangmath.com/games"
       }
     ],
