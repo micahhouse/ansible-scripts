@@ -4,7 +4,7 @@
     state: directory
     owner: root
     group: root
-    mode: 0700
+    mode: 0755
     recurse: yes
  
 - name: Create Reccomended Policy Folder
@@ -13,7 +13,7 @@
     state: directory
     owner: root
     group: root
-    mode: 0700
+    mode: 0755
     recurse: yes
 
 - name: Copy Managed Policy
@@ -22,7 +22,7 @@
     dest: /etc/opt/chrome/policies/managed
     owner: root
     group: root
-    mode: 0700
+    mode: 0755
     
 - name: Copy Reccomended Policy
   copy:
@@ -30,4 +30,4 @@
     dest: /etc/opt/chrome/policies/reccomended
     owner: root
     group: root
-    mode: 0700
+    mode: 0755
