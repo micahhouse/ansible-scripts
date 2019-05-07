@@ -18,7 +18,7 @@
 - name: Create 9:30pm shutdown cronjob
   cron:
     user: ansible
-    name: "ansible provisioning"
+    name: "nightly reboot"
     minute: "30"
     hour: "21"
     job: "/sbin/shutdown -h 0 > /dev/null"
