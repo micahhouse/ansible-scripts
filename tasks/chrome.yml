@@ -7,7 +7,7 @@
     mode: 0700
     recurse: yes
  
- - name: Create Reccomended Policy Folder
+- name: Create Reccomended Policy Folder
    file:
      path: /etc/opt/chrome/reccomended
      state: directory
