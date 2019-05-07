@@ -1,14 +1,14 @@
 {
-  "DefaultCookiesSetting": 4
-  "DefaultImagesSetting": 1
-  "DefaultJavaScriptSetting": 1
-  "DefaultPluginsSetting": 1
-  "DefaultPopupsSetting": 1
-  "DefaultNotificationsSetting": 2
-  "DefaultGeolocationSetting": 2
-  "DefaultWebBluetoothGuardSetting": 1
-  "DefaultWebUsbGuardSetting": 2
-  "DefaultSearchProviderEnabled": true
-  "DefaultSearchProviderSearchURL": '{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}'
+  "DefaultCookiesSetting": 4,
+  "DefaultImagesSetting": 1,
+  "DefaultJavaScriptSetting": 1,
+  "DefaultPluginsSetting": 1,
+  "DefaultPopupsSetting": 1,
+  "DefaultNotificationsSetting": 2,
+  "DefaultGeolocationSetting": 2,
+  "DefaultWebBluetoothGuardSetting": 1,
+  "DefaultWebUsbGuardSetting": 2,
+  "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderSearchURL": '{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}',
   "ExtensionInstallBlacklist": ["*"]
 }
