@@ -33,60 +33,27 @@
   "TranslateEnabled": true,
   "UserDataDir": "/tmp",
   "VideoCaptureAllowed": false,
-  "ManagedBookmarks": [
-  {
-    "toplevel_name": "Websites"
-  }, 
-  { 
-    "name": "Clever", 
-    "url": "clever.com/in/redlands"
-  }, 
-  { 
-    "name": "Tenmarks", 
-    "url": "tenmarks.com"
-  },
-  { 
-    "name": "LexiaCore5",
-    "url": "lexiacore5.com"
-  },
-  { 
-    "name": "Google Classroom",
-    "url": "classroom.google.com"
-  },
-  { "children": 
-   [ 
-     {
-        "name": "Freckle", 
-        "url": "classroom.freckle.com"
-      }, 
-      {
-        "name": "Prodigy", 
-        "url": "prodigygame.com"
-      },
-      {
-        "name": "Multiplication",
-        "url": "multiplication.com"
-      },
-      {
-        "name": "Math Playground",
-        "url": "mathplayground.com"
-      },
-      {
-        "name": "Greg Tang Math",
-        "url": "gregtangmath.com/games"
-      }
-    ],
-     "name": "English"
-    [ 
-     {
-        "name": "NewsELA", 
-        "url": "newsela.com"
-      }, 
-      {
-        "name": "Get Epic", 
-        "url": "getepic.com"
-      }
-    ]
-  }
+  "ManagedBookmarks": 
+  [
+  {"toplevel_name": "Websites"}, 
+    {"name": "Clever", "url": "clever.com/in/redlands"}, 
+		{"name": "Tenmarks", "url": "tenmarks.com"}, 
+    {"name": "LexiaCore 5", "url": "lexiacore5.com"},
+		{"name": "Google Classroom", "url": "classroom.google.com"}, 
+	{"name": "Math", "children": 
+		[
+		{"name": "Freckle", "url": "classroom.freckle.com"}, 
+		{"name": "Prodigy", "url": "prodigygame.com"},
+    {"name": "Muliplication", "url": "multiplication.com"},
+    {"name": "Math Playground", "url": "mathplayground.com"},
+    {"name": "Greg Tang Math", "url": "gregtangmath.com/games"}
+		]
+	},
+   {"name": "Reading", "children": 
+      [
+	   {"name": "NewsELA", "url": "newsela.com"}, 
+	   {"name": "Get Epic", "url": "getepic.com"}
+      ]
+   }
 ]
 }
