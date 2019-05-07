@@ -8,13 +8,13 @@
     recurse: yes
  
 - name: Create Reccomended Policy Folder
-   file:
-     path: /etc/opt/chrome/reccomended
-     state: directory
-     owner: root
-     group: root
-     mode: 0700
-     recurse: yes
+  file:
+    path: /etc/opt/chrome/reccomended
+    state: directory
+    owner: root
+    group: root
+    mode: 0700
+    recurse: yes
 
 - name: Copy Managed Policy
   copy:
