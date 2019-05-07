@@ -1,0 +1,8 @@
+- name: Block incoming connections
+  ufw:
+    direction: incoming
+    rule: deny
+
+- name: Enable UFW
+  ufw:
+    state: enabled
