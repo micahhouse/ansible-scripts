@@ -29,4 +29,4 @@
     name: "nightly reboot"
     minute: "0"
     hour: "21"
-    job: "/usr/bin/ansible-pull -U https://github.com/micahhouse/ansible-scripts.git files/nightly.yml > /dev/null"
+    job: "/usr/bin/ansible-pull -U https://github.com/micahhouse/ansible-scripts.git tasks/nightly.yml > /dev/null"
