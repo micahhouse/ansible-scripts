@@ -21,3 +21,6 @@
 
 - name: Extract skel
   include_tasks: tasks/skel.yml
+
+- name: Make Boot Silent
+  include_tasks: tasks/silent.yml
