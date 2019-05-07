@@ -1,6 +1,7 @@
 - name: Install Packages
   apt:
     name:
+      - arc-theme
       - google-chrome-stable
       - xscreensaver
       - xscreensaver-screensaver-*
