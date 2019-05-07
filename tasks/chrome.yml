@@ -1,0 +1,17 @@
+- name: Create Managed Policy Folder
+  file:
+    path: /etc/opt/chrome/managed
+    state: directory
+    owner: root
+    group: root
+    mode: 0700
+    recurse: yes
+ 
+ - name: Create Reccomended Policy Folder
+   file:
+     path: /etc/opt/chrome/reccomended
+     state: directory
+     owner: root
+     group: root
+     mode: 0700
+     recurse: yes
