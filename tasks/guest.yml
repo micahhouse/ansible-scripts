@@ -1,8 +1,8 @@
 - name: Enable Guest User
   lineinfile:
     path: /usr/share/lightdm/lightdm.conf.d/50-disable-guest.conf
-    regexp: 'allow-guest=false'
-    line: " {{item}} "
+    regexp: '^allow-guest=false'
+    line: '{{item}}'
   with_items:
     - 'allow-guest=true'
     - 'autologin-guest=true'
