@@ -5,6 +5,3 @@
 - name: Upgrade System
   apt:
     upgrade: dist
-
-- name: Run Ansible Galaxy
-  command: ansible-galaxy install -r requirements.yml
