@@ -1,0 +1,7 @@
+- name: Extract skel
+  unarchive:
+    src: files/skel.tar.gz
+    dest: /usr/share/lightdm/guest-session/skel
+    owner: root
+    group: root
+    mode: 0755
