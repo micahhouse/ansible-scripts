@@ -13,7 +13,7 @@
   "SystemTimezone": "America/Los_Angeles",
   "EnableMediaRouter": false,
   "ExtensionInstallBlacklist": ["*"],
-  "ExtensionInstallForcelist": ["cjpalhdlnbpafiamejdnhcphjbkeiagm"],
+  "ExtensionInstallForcelist": ["cjpalhdlnbpafiamejdnhcphjbkeiagm","pgmjaihnmedpcdkjcgigocogcbffgkbn"],
   "IncognitoModeAvailability": 0,
   "PromotionalTabsEnabled": true,
   "PromptForDownloadLocation": false,
