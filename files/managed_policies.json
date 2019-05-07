@@ -1,0 +1,5 @@
+# Policies that are enforced and cannot be changed by the user
+
+{
+  "HomepageLocation": "www.google.com"
+}
