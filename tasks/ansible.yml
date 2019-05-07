@@ -14,3 +14,11 @@
   copy:
     src: files/ansible_sudoers
     dest: /etc/sudoers.d/ansible
+
+- name: Create 9:30pm shutdown cronjob
+  cron:
+    user: ansible
+    name: "ansible provisioning"
+    minute: "30"
+    hour: "21"
+    job: "/sbin/shutdown -h 0 > /dev/null"
