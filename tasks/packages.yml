@@ -3,6 +3,7 @@
     name:
       - arc-theme
       - google-chrome-stable
+      - ufw
       - xscreensaver
       - xscreensaver-screensaver-*
       - xubuntu-restricted-extras
