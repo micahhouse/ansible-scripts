@@ -1,0 +1,16 @@
+- name: Make Managed Chrome Folder
+  file:
+    path: /etc/opt/chrome/policies/managed
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+    recurse: yes
+
+- name: Copy Managed Chrome Policy
+  copy:
+    src: files/managed_policies.json
+    dest: /etc/opt/chrome/policies/managed
+    owner: root
+    group: root
+    mode: 0755
